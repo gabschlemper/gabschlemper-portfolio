@@ -7,8 +7,8 @@
 @layer base {
   html {
     font-family: Roboto Mono, sans-serif;
-    color: #fff;
-    background-color: #000;
+    color: white;
+    background-color: black;
     scroll-behavior: smooth;
   }
   h1,
