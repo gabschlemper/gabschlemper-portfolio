@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 const Contact = () => {
-  const [buttonText, setButtonText] = useState('gabschlemper@gmail.com');
+  const [buttonText, setButtonText] = useState("gabschlemper@gmail.com");
 
   function copyClipboard() {
-    navigator.clipboard.writeText('gabschlemper@gmail.com');
+    navigator.clipboard.writeText("gabschlemper@gmail.com");
   }
 
   function handleClick() {
-    setButtonText('Copied to clipboard!');
+    setButtonText("Copied to clipboard!");
   }
 
   return (
@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="flex gap-3 justify-center mt-3">
           <img src="phone-icon.svg" alt="phone icon" />
           <div className="text-grey-100 hover:underline hover:cursor-pointer hover:opacity-50 transition-all	">
-            +353 83 206 2152
+            +48 99803-2157
           </div>
         </div>
       </section>
