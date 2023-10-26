@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  console.log("openMenu", openMenu);
 
   return (
     <header>
@@ -27,12 +28,21 @@ const Header = () => {
           </ul>
         </div>
 
-        <button
-          className="flex items-center hover:text-gray-70 lg:hidden"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
-          <img src="menu-icon.svg" alt="menu icon" />
-        </button>
+        {openMenu ? (
+          <button
+            className="flex items-center hover:text-gray-70 lg:hidden"
+            onClick={() => setOpenMenu(!openMenu)}
+          >
+            <img src="close-icon.svg" alt="menu icon" />
+          </button>
+        ) : (
+          <button
+            className="flex items-center hover:text-gray-70 lg:hidden"
+            onClick={() => setOpenMenu(!openMenu)}
+          >
+            <img src="menu.svg" alt="menu icon" />
+          </button>
+        )}
       </div>
       {openMenu ? (
         <div className="bg-black lg:hidden">
