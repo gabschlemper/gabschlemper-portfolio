@@ -4,7 +4,7 @@ import { navItems } from "../data";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <header className="fixed w-full z-50">
+    <header className="fixed w-full z-100">
       <div className="bg-grey-300 px-4 lg:px-14 py-6 bg-zinc-800 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img src="/logo.svg" alt="logo" className="w-8" />
@@ -28,14 +28,14 @@ const Header = () => {
             className="flex items-center hover:text-gray-70 lg:hidden"
             onClick={() => setOpenMenu(!openMenu)}
           >
-            <img src="close-icon.svg" alt="menu icon" />
+            <img src="closeicon.svg" alt="menu icon" />
           </button>
         ) : (
           <button
             className="flex items-center hover:text-gray-70 lg:hidden"
             onClick={() => setOpenMenu(!openMenu)}
           >
-            <img src="menuicon.svg" alt="menu icon" />
+            <img src="/menuicon.svg" alt="menu icon" />
           </button>
         )}
       </div>
