@@ -4,7 +4,7 @@ import { navItems } from "../data";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <header className="fixed w-full z-100">
+    <header>
       <div className="bg-grey-300 px-4 lg:px-14 py-6 bg-zinc-800 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img src="/logo.svg" alt="logo" className="w-8" />
