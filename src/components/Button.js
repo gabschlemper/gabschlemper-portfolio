@@ -20,7 +20,7 @@ const Button = ({
       ${uppercase ? `uppercase` : `normal-case`}
         rounded-full  transition-all py-3 px-8 hover:cursor-pointer hover:opacity-50 ${className}
       `}
-      target={openNewTab ? "_blank" : "_self"}
+      // target={openNewTab ? "_blank" : ""}
     >
       {children}
     </a>

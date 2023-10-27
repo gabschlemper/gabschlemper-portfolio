@@ -30,7 +30,7 @@ export const works = {
       "Intuitive Navigation: The website offers an easy-to-navigate structure, allowing visitors to swiftly find information about Trevo's services, location, and contact details.",
       "Testimonials: A section for customer testimonials and reviews adds credibility and builds trust with potential clients.",
     ],
-    img: "/trevo.png",
+    img: "/trevoproject.png",
     link: "https://www.trevoautomotivo.com.br/",
   },
   coffedelivery: {
@@ -47,7 +47,7 @@ export const works = {
       "Dynamic Lists and Keys: Lists of coffee items are dynamically generated with unique keys, ensuring efficient rendering and updates.",
       "Componentization: The project embraces componentization, making the codebase modular and easy to maintain, while also promoting code reusability.",
     ],
-    img: "/coffedelivery.png",
+    img: "/coffedeliveryproject.png",
     link: "https://coffe-delivery-lilac.vercel.app/",
   },
 };
