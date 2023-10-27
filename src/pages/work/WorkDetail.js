@@ -13,15 +13,13 @@ const WorkDetail = ({ id }) => {
   return (
     <>
       <Header />
-      <div className="">
+      <div className="pt-24">
         <div className="flex flex-col items-center justify-center py-20">
           <h1 className="text-2xl lg:text-3xl uppercase pb-5 ">{item.title}</h1>
-          <h3 className="pb-6 text-grey-100 max-w-xl leading-8b text-center lg:leading-10 lg:text-lg">
+          <h3 className="pb-6 text-grey-100 max-w-xl leading-8 text-center lg:leading-10 lg:text-lg">
             {item.overview}
           </h3>
-          <Button href={item.link} openNewTab>
-            Project Link
-          </Button>
+          <Button href={item.link}>Project Link</Button>
         </div>
         <div className="bg-white pb-16 px-5">
           <div className="max-w-4xl m-auto">
@@ -57,9 +55,7 @@ const WorkDetail = ({ id }) => {
               ))}
             </ul>
             <div className="flex gap-2 mt-4">
-              <Button href={item.link} openNewTab>
-                Project Link
-              </Button>
+              <Button href={item.link}>Project Link</Button>
               <a
                 href="/"
                 className="text-black flex items-center gap-2 ml-4 hover:opacity-50"
