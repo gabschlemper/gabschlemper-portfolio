@@ -4,7 +4,6 @@ import { works } from "../data";
 
 const Projects = () => {
   const worksData = Object.values(works);
-  console.log("worksData", worksData);
 
   return (
     <section id="projects" className="px-4 lg:px-14 py-14">
@@ -12,22 +11,27 @@ const Projects = () => {
         <h1 className="text-2xl lg:text-3xl text-grey-100 uppercase text-center">
           Projects
         </h1>
-        <div className="w-14 bg-grey-200 h-1 mt-2 mb-5 lg:mb-10 m-auto" />
+        <div className="w-14 bg-grey-200 h-1 mt-2 mb-5 lg:mb-20 m-auto" />
 
-        <div className="flex flex-col gap-20">
-          {worksData.map((item) => {
+        <div className="flex items-center flex-col gap-20">
+          {worksData.map((item, i) => {
             return (
               <div
-                key={item}
-                className="text-center lg:text-left flex flex-col lg:flex-row items-center gap-3 lg:gap-6 shadow-2xl "
+                key={i}
+                className="text-center lg:text-left flex flex-col lg:flex-row items-center gap-3 lg:gap-6 shadow-2xl max-w-3xl"
               >
-                <img
-                  alt="project overview"
-                  src={item.img}
-                  className="md:max-w-md"
-                />
+                <a
+                  className="hover:cursor-pointer hover:scale-105 transition-all"
+                  href={item.link}
+                >
+                  <img
+                    alt="project overview"
+                    src={item.img}
+                    className="md:max-w-[350px]"
+                  />
+                </a>
                 <div className="">
-                  <h2 className="md:mb-3">{item.title}</h2>
+                  <h2 className="md:mb-3 text-lg">{item.title}</h2>
                   <h3 className="text-grey-100 mb-8">{item.overview}</h3>
                   <Button href={item.url}>View Project</Button>
                 </div>

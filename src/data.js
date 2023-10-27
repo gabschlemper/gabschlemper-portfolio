@@ -14,7 +14,7 @@ export const works = {
       "Disqus integration for user comments and engagement",
     ],
     img: "/alanharder.png",
-    link: "https://alanharder.ca/",
+    link: "https:/alanharder.ca/",
   },
   trevo: {
     title: "Trevo Automotive Center",
@@ -33,9 +33,9 @@ export const works = {
     img: "/trevo.png",
     link: "https://www.trevoautomotivo.com.br/",
   },
-  coffeDelivery: {
+  coffedelivery: {
     title: "Coffe Delivery",
-    url: "/work/coffe-delivery",
+    url: "/work/coffedelivery",
     overview: "Coffee Delivery - Simplifying Coffee Shopping with React.",
     description:
       "As a developer, I had the pleasure of crafting the 'Coffee Delivery' application, which simplifies the shopping experience for a fictional coffee shop. This web application leverages the power of React.js, Vite, and Tailwind CSS to create an efficient and user-friendly interface for managing a coffee order. With a focus on enhancing the user experience, the application seamlessly integrates various technologies such as States, Context API, Local Storage, Immutability of the state, Lists and Keys in React.js, Properties, and Componentization to ensure smooth operation and flexibility. 'Coffee Delivery' offers an intuitive and interactive shopping cart experience while embracing the best practices of React development.",
@@ -47,7 +47,7 @@ export const works = {
       "Dynamic Lists and Keys: Lists of coffee items are dynamically generated with unique keys, ensuring efficient rendering and updates.",
       "Componentization: The project embraces componentization, making the codebase modular and easy to maintain, while also promoting code reusability.",
     ],
-    img: "/coffe-delivery.png",
+    img: "/coffedelivery.png",
     link: "https://coffe-delivery-lilac.vercel.app/",
   },
 };
@@ -67,5 +67,24 @@ export const socialMediaData = [
     title: "Twitter",
     img: "/twitter.svg",
     link: "https://twitter.com/gabschlemper",
+  },
+];
+
+export const navItems = [
+  {
+    name: "Home",
+    href: "#home",
+  },
+  {
+    name: "About",
+    href: "#about",
+  },
+  {
+    name: "Projects",
+    href: "#projects",
+  },
+  {
+    name: "Contact",
+    href: "#contact",
   },
 ];

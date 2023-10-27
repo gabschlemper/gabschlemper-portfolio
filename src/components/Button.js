@@ -1,17 +1,26 @@
-import React from 'react';
+import React from "react";
 
-const Button = ({ children, href, contained, uppercase }) => {
+const Button = ({
+  children,
+  href,
+  contained,
+  uppercase,
+  openNewTab,
+  className,
+}) => {
   return (
     <a
       href={href}
-      className={`${
+      className={`
+      ${
         contained
           ? `bg-white text-grey-100`
           : `bg-black border border-white border-solid`
       }
       ${uppercase ? `uppercase` : `normal-case`}
-        rounded-full  transition-all py-4 px-10 hover:cursor-pointer hover:opacity-50
+        rounded-full  transition-all py-3 px-8 hover:cursor-pointer hover:opacity-50 ${className}
       `}
+      target={openNewTab ? "_blank" : "_self"}
     >
       {children}
     </a>

@@ -1,15 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 const Contact = () => {
-  const [buttonText, setButtonText] = useState("gabschlemper@gmail.com");
-
-  function copyClipboard() {
-    navigator.clipboard.writeText("gabschlemper@gmail.com");
-  }
-
-  function handleClick() {
-    setButtonText("Copied to clipboard!");
-  }
-
   return (
     <>
       <section id="contact" className="text-center py-20 bg-grey-300">
@@ -22,12 +12,13 @@ const Contact = () => {
         </p>
         <div className="flex gap-3 justify-center">
           <img src="/email-icon.svg" alt="email icon" />
-          <button
+          <a
             className="text-grey-100 hover:underline hover:cursor-pointer hover:opacity-50 transition-all	"
-            onClick={(copyClipboard, handleClick)}
+            target="_blank"
+            href="mailto:gabschlemper@gmail.com"
           >
-            {buttonText}
-          </button>
+            gabschlemper@gmail.com
+          </a>
         </div>
         <div className="flex gap-3 justify-center mt-3">
           <img src="phone-icon.svg" alt="phone icon" />

@@ -2,7 +2,7 @@
 
 This is my personal portfolio website, built using Gatsby and Tailwind CSS. It showcases my work, skills, and provides information about me.
 
-<img src="./public/readme-project.png" alt="drawing" width="500"/>
+<img src="./public/readme-project.png" alt="Project Responsive Image" width="500"/>
 
 ## About
 

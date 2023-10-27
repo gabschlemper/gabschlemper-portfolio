@@ -3,12 +3,10 @@ import Button from "./Button";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 const Home = () => {
-  const text = "Text Reveal Animation 💫";
-
   return (
     <section
       id="home"
-      className="px-4 lg:px-14 py-6 lg:py-14 flex justify-center items-center h-[45rem] lg:h-screen"
+      className="px-4 lg:px-14 py-6 lg:py-14 flex justify-center items-center h-screen "
     >
       <SocialMediaIcons />
       <div className="flex flex-col items-center">

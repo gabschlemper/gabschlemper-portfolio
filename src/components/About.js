@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
   return (
@@ -8,11 +8,17 @@ const About = () => {
           <h1 className="text-2xl lg:text-3xl text-grey-100 uppercase text-center">
             About Me
           </h1>
-          <div className="w-14 bg-grey-200 h-1 mt-2 mb-5 lg:mb-10 m-auto" />
-          <div className="flex gap-14 flex-col lg:flex-row text-center lg:text-left">
-            <img src="/logo.svg" alt="logo" className="m-auto" />
+          <div className="w-14 bg-grey-200 h-1 mt-2 mb-5 lg:mb-20 m-auto" />
+          <div className="flex justify-between gap-10 mg:gap-0 flex-col lg:flex-row text-center lg:text-left">
+            <img
+              src="/logo.svg"
+              alt="logo"
+              width={250}
+              height="auto"
+              className="m-auto"
+            />
             <div>
-              <div className="leading-8 lg:leading-10 lg:text-lg flex flex-col justify-center items-start max-w-5xl pb-10">
+              <div className="flex-2 leading-8 lg:leading-10 lg:text-lg flex flex-col justify-center items-start max-w-5xl pb-10">
                 <p>
                   Hi there!
                   <br />
@@ -28,16 +34,28 @@ const About = () => {
                 </p>
               </div>
               <div className="flex flex-col md:flex-row justify-between gap-8 lg:gap-32">
-                <span className="shrink text-grey-100">my stack</span>
+                <span className="shrink text-white">my stack</span>
                 <div className="flex grow justify-between">
                   <img
                     src="/js-icon.svg"
-                    className="w-8"
+                    className="w-8 hover:scale-110 transition-all"
                     alt="JavaScript Icon"
                   />
-                  <img src="/html-icon.svg" className="w-8" alt="Html Icon" />
-                  <img src="/css-icon.svg" className="w-8" alt="Css Icon" />
-                  <img src="/react-icon.svg" className="w-8" alt="React Icon" />
+                  <img
+                    src="/html-icon.svg"
+                    className="w-8 hover:scale-110 transition-all"
+                    alt="Html Icon"
+                  />
+                  <img
+                    src="/css-icon.svg"
+                    className="w-8 hover:scale-110 transition-all"
+                    alt="Css Icon"
+                  />
+                  <img
+                    src="/react-icon.svg"
+                    className="w-8 hover:scale-110 transition-all"
+                    alt="React Icon"
+                  />
                 </div>
               </div>
             </div>
