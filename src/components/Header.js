@@ -28,7 +28,7 @@ const Header = () => {
             className="flex items-center hover:text-gray-70 lg:hidden"
             onClick={() => setOpenMenu(!openMenu)}
           >
-            <img src="closeicon.svg" alt="menu icon" />
+            <img src="/closeicon.svg" alt="menu icon" />
           </button>
         ) : (
           <button

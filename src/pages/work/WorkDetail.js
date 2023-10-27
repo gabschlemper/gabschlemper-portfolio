@@ -13,7 +13,7 @@ const WorkDetail = ({ id }) => {
   return (
     <>
       <Header />
-      <div className="pt-24">
+      <div className="pt-24 md:pt-32">
         <div className="flex flex-col items-center justify-center py-20">
           <h1 className="text-2xl lg:text-3xl uppercase pb-5 ">{item.title}</h1>
           <h3 className="pb-6 text-grey-100 max-w-xl leading-8 text-center lg:leading-10 lg:text-lg">
