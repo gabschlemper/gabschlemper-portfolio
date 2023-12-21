@@ -15,6 +15,7 @@ const SocialMediaIcons = ({ horizontal, showMobile }) => {
             href={item.link}
             className="hover:opacity-50 transition-opacity"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={item.img} alt={item.title} className="w-8" />
           </a>

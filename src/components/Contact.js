@@ -15,6 +15,7 @@ const Contact = () => {
           <a
             className="text-grey-100 hover:underline hover:cursor-pointer hover:opacity-50 transition-all	"
             target="_blank"
+            rel="noreferrer"
             href="mailto:gabschlemper@gmail.com"
           >
             gabschlemper@gmail.com

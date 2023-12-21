@@ -16,6 +16,24 @@ export const works = {
     img: "/alanharder.png",
     link: "https:/alanharder.ca/",
   },
+  "github-blog": {
+    title: "GitHub Blog",
+    url: "/work/github-blog",
+    overview: "GitHub Blog - Leveraging GitHub API to Forge a Dynamic Blog Experience",
+    description:
+      "In the GitHub Blog project, I utilized the GitHub API to transform a repository into a user-friendly blog platform. This approach enabled me to display profile details, manage issues effectively, and present blog posts in a streamlined manner, offering readers a cohesive and engaging experience.",
+    tools: ["React", "Styled-Components", "TypeScript", "Vite", "Github API"],
+    features: [
+      "Profile Listing: Displays GitHub profile information, including profile picture, followers count, name, and other relevant details fetched from the GitHub API.",
+      "Listing and Filtering Issues: Lists all issues from a specified GitHub repository and provides a filtering mechanism to view specific issues based on criteria.",
+      "Complete Post (Issue) Page: Offers a dedicated page layout to showcase a full blog post (issue) with comprehensive details retrieved from GitHub.",
+      "Fetch / Axios: Utilizes Axios for efficient data fetching from the GitHub API, ensuring smooth data retrieval and management.",
+      "Routing and React Router DOM: Implements React Router DOM for handling application routing, enabling seamless navigation between different sections and pages.",
+      "Forms: Integrates form functionalities to capture and manage user interactions, ensuring data integrity and proper user experience."
+    ],
+    img: "/github-blog.png",
+    link: "https://github-blog-ten-opal.vercel.app/",
+  },
   trevo: {
     title: "Trevo Automotive Center",
     url: "/work/trevo",
@@ -32,6 +50,24 @@ export const works = {
     ],
     img: "/trevoproject.png",
     link: "https://www.trevoautomotivo.com.br/",
+  },
+  desterro: {
+    title: "Hóquei Clube Desterro",
+    url: "/work/desterro",
+    overview:
+      "Field Hockey Team Website - Showcasing the Spirit of Hoquei Clube Desterro with React and Next.js.",
+    description:
+      "I am proud to present the official website for Hoquei Clube Desterro, a vibrant field hockey team based in Florianópolis. This web application, built with React, Next.js, and Tailwind CSS, aims to capture the essence and spirit of the team. From responsive design to seamless user interactions, every aspect of the website is crafted with precision and dedication. The use of TypeScript ensures a robust and type-safe codebase, while Figma was employed in the design process to create a visually appealing and cohesive user experience. Explore the world of Hoquei Clube Desterro and stay updated on the latest news, matches, and team achievements.",
+    tools: ["React", "Next.js", "Tailwind", "TypeScript", "Figma"],
+    features: [
+      "Responsive Design: The website is designed to provide an optimal viewing and interaction experience across a wide range of devices, from desktops to mobile phones.",
+      "Dynamic Content: Stay informed about the team's latest news, upcoming matches, and recent achievements through dynamically updated content.",
+      "Player Profiles: Explore detailed profiles of the talented players who contribute to the success of Hoquei Clube Desterro.",
+      "Match Schedule: Check the team's schedule, including upcoming matches, venues, and timings.",
+      "Interactive Galleries: View captivating images and galleries showcasing memorable moments from the team's journey.",
+    ],
+    img: "/desterro.png",
+    link: "https://www.hoqueiclubedesterro.com/",
   },
   coffedelivery: {
     title: "Coffe Delivery",
@@ -50,6 +86,7 @@ export const works = {
     img: "/coffedeliveryproject.png",
     link: "https://coffe-delivery-lilac.vercel.app/",
   },
+
 };
 
 export const socialMediaData = [

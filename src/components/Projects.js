@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
 import { works } from "../data";
+import Button from "./Button";
 
 const Projects = () => {
   const worksData = Object.values(works);
@@ -9,32 +9,27 @@ const Projects = () => {
     <section id="projects" className="px-4 lg:px-14 py-14">
       <div>
         <h1 className="text-2xl lg:text-3xl text-grey-100 uppercase text-center">
-          Projects
+          Recent Projects
         </h1>
         <div className="w-14 bg-grey-200 h-1 mt-2 mb-5 lg:mb-20 m-auto" />
 
-        <div className="flex items-center flex-col gap-20">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {worksData.map((item, i) => {
             return (
               <div
                 key={i}
-                className="text-center lg:text-left flex flex-col lg:flex-row items-center gap-3 lg:gap-6 shadow-2xl max-w-3xl"
+                className="text-center lg:text-left flex flex-col items-center shadow-2xl m-auto"
               >
                 <a
                   className="hover:cursor-pointer hover:scale-105 transition-all"
-                  href={item.link}
+                  href={item.url}
                 >
                   <img
                     alt="project overview"
                     src={item.img}
-                    className="md:max-w-[350px]"
+                    className=""
                   />
                 </a>
-                <div className="">
-                  <h2 className="md:mb-3 text-lg">{item.title}</h2>
-                  <h3 className="text-grey-100 mb-8">{item.overview}</h3>
-                  <Button href={item.url}>View Project</Button>
-                </div>
               </div>
             );
           })}

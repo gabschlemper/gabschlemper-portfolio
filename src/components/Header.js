@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <header>
       <div className="bg-grey-300 px-4 lg:px-14 py-6 bg-zinc-800 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+        <a href="/" className="flex items-center gap-4">
           <img src="/logo.svg" alt="logo" className="w-8" />
           <h2>Gabriela Schlemper</h2>
-        </div>
+        </a>
         <div className="hidden lg:block">
           <ul className="flex gap-6 ">
             {navItems.map((item) => (
@@ -17,7 +17,7 @@ const Header = () => {
                 key={item.name}
                 className="hover:opacity-50 transition-opacity cursor-pointer"
               >
-                <a href={item.href}>{item.name}</a>
+                <a rel="prefetch" href={item.href}>{item.name}</a>
               </li>
             ))}
           </ul>
